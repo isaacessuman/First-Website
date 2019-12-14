@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+       <header>
+            <img src="Images/logo.svg" alt="23andfour logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="Images/ham.svg" alt="toggle-menu" class="menu" id="menu">
+                </a>
+
+                <ul class="hide-mobile show-desktop" id="nav">
+
+                <li id="exit" class="exit-btn hide desktop"><img src="Images/exit.svg" alt="exit menu "></li>  
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+
+                </ul>
+
+            </nav>
+
+    </header>
+
+    <section>
+        <img src="Images/server.svg" alt="server graphic" class="server">
+        
+        <h1>Web Hosting for the Modern Era</h1>
+        <p class="subhead">Go serverless and pay only for what you use</p>
+          
+        <img src="Images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+
+    </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+
+                <li>
+                  <img src="Images/icon-1.svg" alt="calenar icon">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt ducimus tempore neque aspernatur eveniet hic suscipit ipsum doloremque, dolore labore tempora, odio, sequi id quas aperiam nisi dolor? Quos, error.</p>  
+                </li>
+                <li>
+                  <img src="Images/icon-2.svg" alt="calenar icon">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt ducimus tempore neque aspernatur eveniet hic suscipit ipsum doloremque, dolore labore tempora, odio, sequi id quas aperiam nisi dolor? Quos, error.</p>  
+                </li>
+                <li>
+                  <img src="Images/icon-3.svg" alt="calenar icon">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt ducimus tempore neque aspernatur eveniet hic suscipit ipsum doloremque, dolore labore tempora, odio, sequi id quas aperiam nisi dolor? Quos, error.</p>  
+                </li>  
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="Images/user1.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellat quos assumenda sapiente aspernatur quisquam rem deleniti nam libero, minus ex recusandae molestias hic odit possimus adipisci, perferendis pariatur veritatis.</blockquote>
+                        <figcaption>- Jane Doe</figcaption>
+                   </figure>
+                </li>
+                
+                <li>
+                   <figure>
+                        <img src="Images/user2.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellat quos assumenda sapiente aspernatur quisquam rem deleniti nam libero, minus ex recusandae molestias hic odit possimus adipisci, perferendis pariatur veritatis.</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                   </figure>      
+                </li>
+            </ul>
+        </div>
+    </div>    
+
+    <div class="container">
+        <h2>Start your free trial now!</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="Images/logo-white.svg" alt="logo" class="logo">
+                </a>    
+                    <p class="address">Melrose Place, 90210<br>USA</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+    </script>
+
+</body>
+</html>
